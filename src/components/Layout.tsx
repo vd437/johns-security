@@ -1,5 +1,6 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="flex-1">
               <h2 className="text-lg font-semibold">Professional CV</h2>
             </div>
+            <ThemeToggle />
           </header>
           <div className="p-6 md:p-8 lg:p-12">
             {children}
