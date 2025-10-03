@@ -17,7 +17,6 @@ const menuItems = [
   { title: "Home", url: "/", icon: Home },
   { title: "Skills", url: "/skills", icon: Code },
   { title: "Experience", url: "/experience", icon: Briefcase },
-  { title: "Contact", url: "/contact", icon: Mail },
 ];
 
 export function AppSidebar() {
