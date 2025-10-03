@@ -49,33 +49,6 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Contact Methods */}
-      <div className="grid gap-6 md:grid-cols-3">
-        {contactMethods.map((method, idx) => (
-          <Card key={idx} className="shadow-card transition-smooth hover:shadow-hover">
-            <CardHeader>
-              <method.icon className="mb-2 h-8 w-8 text-primary" />
-              <CardTitle className="text-lg">{method.title}</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-sm font-mono text-muted-foreground break-all">
-                {method.value}
-              </p>
-              <p className="text-xs text-muted-foreground">
-                {method.description}
-              </p>
-              <Button 
-                className="w-full" 
-                variant="outline"
-                onClick={() => window.open(method.href, '_blank')}
-              >
-                {method.action}
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-
       {/* Availability */}
       <Card className="shadow-card">
         <CardHeader>
